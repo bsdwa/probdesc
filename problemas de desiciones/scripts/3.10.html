@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3.10 - Plan de Viaje</title>
+    <link rel="stylesheet" href="../styles/3.10.css">
+</head>
+<body>
+
+    <a href="../index.html" class="btn-regresar">← Volver al Inicio</a>
+
+    <main class="contenedor-problema">
+        <h3>Plan de Viaje</h3>
+        
+        <div class="formulario">
+            <input type="number" id="km" placeholder="Costo por KM ($)" step="0.1">
+            
+            <input type="number" id="money" placeholder="Tu presupuesto ($)">
+            
+            <button onclick="travelPlan()">Determinar Destino</button>
+        </div>
+
+        <p id="dest" class="resultado-texto"></p>
+    </main>
+
+    <script src="problemas.js"></script>
+</body>
+</html>

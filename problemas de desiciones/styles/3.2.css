@@ -1,0 +1,126 @@
+/* Fondo oscuro con toque esmeralda neón */
+body {
+    background: radial-gradient(circle at top, #064e3b, #022c22, #000000);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Enlace para volver al menú principal */
+.btn-regresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #34d399; /* Verde esmeralda claro */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-regresar:hover {
+    color: #6ee7b7;
+    transform: translateX(-3px); /* Se mueve tantito a la izquierda */
+}
+
+/* Tarjeta flotante de cristal (Glassmorphism) */
+.contenedor-problema {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título principal */
+h3 {
+    margin-top: 0;
+    color: #34d399;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(52, 211, 153, 0.2);
+}
+
+/* Contenedor del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cajas de texto (inputs) */
+input[type="number"] {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #34d399;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.3); /* Brillo al dar clic */
+}
+
+/* Botón de Calcular */
+button {
+    background: linear-gradient(135deg, #059669, #10b981);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px); /* Se eleva un poquito */
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+    filter: brightness(1.1); /* Se ilumina más */
+}
+
+/* Bloques de texto para el resultado animado */
+.resultado-texto {
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    animation: popIn 0.3s ease-out; /* Efecto de aparición */
+}
+
+/* Estilo si el cálculo es exitoso */
+.exito { 
+    background: rgba(52, 211, 153, 0.15); 
+    color: #34d399; 
+    border: 1px solid rgba(52, 211, 153, 0.3); 
+}
+
+/* Estilo si falta llenar algún campo */
+.alerta { 
+    background: rgba(234, 179, 8, 0.15); 
+    color: #facc15; 
+    border: 1px solid rgba(234, 179, 8, 0.3); 
+}
+
+/* Animación para que el resultado brote suavemente */
+@keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

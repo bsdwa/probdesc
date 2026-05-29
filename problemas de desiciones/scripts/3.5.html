@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3.5 - ¿Quién es el menor?</title>
+    <link rel="stylesheet" href="../styles/3.5.css">
+</head>
+<body>
+
+    <a href="../index.html" class="btn-regresar">← Volver al Inicio</a>
+
+    <main class="contenedor-problema">
+        <h3>¿Quién es el menor?</h3>
+        
+        <div class="formulario">
+            <div class="fila-input">
+                <input type="text" id="nom1" placeholder="Nombre 1">
+                <input type="number" id="ed1" placeholder="Edad 1">
+            </div>
+            <div class="fila-input">
+                <input type="text" id="nom2" placeholder="Nombre 2">
+                <input type="number" id="ed2" placeholder="Edad 2">
+            </div>
+            <div class="fila-input">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; width: 100%;">
+                    <input type="text" id="nom3" placeholder="Nombre 3">
+                    <input type="number" id="ed3" placeholder="Edad 3">
+                </div>
+            </div>
+            <button onclick="findYoungest()">Comparar Edades</button>
+        </div>
+
+        <p id="result" class="resultado-texto"></p>
+    </main>
+
+    <script src="problemas.js"></script>
+</body>
+</html>

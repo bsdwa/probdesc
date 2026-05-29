@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3.9 - Cotización de Seguro</title>
+    <link rel="stylesheet" href="../styles/3.9.css">
+</head>
+<body>
+
+    <a href="../index.html" class="btn-regresar">← Volver al Inicio</a>
+
+    <main class="contenedor-problema">
+        <h3>Cotización de Seguro</h3>
+        
+        <div class="formulario">
+            <label for="type">Tipo de Póliza:</label>
+            <select id="type">
+                <option value="A">Plan A (Cobertura Amplia)</option>
+                <option value="B">Plan B (Cobertura Básica)</option>
+            </select>
+
+            <label for="age">Edad del Asegurado:</label>
+            <input type="number" id="age" placeholder="Ej. 45">
+
+            <div class="opciones-checkbox">
+                <label>
+                    <input type="checkbox" id="drink"> ¿Suele consumir alcohol?
+                </label>
+                <label>
+                    <input type="checkbox" id="glass"> ¿Utiliza lentes?
+                </label>
+                <label>
+                    <input type="checkbox" id="sick"> ¿Padece alguna enfermedad?
+                </label>
+            </div>
+
+            <button onclick="insuranceQuote()">Generar Cotización</button>
+        </div>
+
+        <p id="total" class="resultado-texto"></p>
+    </main>
+
+    <script src="problemas.js"></script>
+</body>
+</html>
